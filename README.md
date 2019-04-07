@@ -70,5 +70,3 @@ This part requires you to create a version of the code in which subjects report 
 4.	Make sure the probe screen duration is limited, so the subject has to respond within 20 seconds. If no response has been received – the program should mark the corresponding values in the datafile as “NaN”  and move on to the next trial.
 
 
-
-
