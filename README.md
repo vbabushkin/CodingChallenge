@@ -4,14 +4,21 @@ Please read [The Sreenivasan Lab Coding Manual](https://github.com/vbabushkin/Co
 You are provided with a real, though quite simple, experiment code ( so called TRST for Triangle Rotated Stimulus Test ).  
 In TRST folder locate [main.m](https://github.com/vbabushkin/CodingChallenge/blob/master/TRST/main.m)and open it in Matlab, run it and go through all the trials. 
 As soon as you run the main.m you will see in Command Line window a following prompt, asking to submit subject and session number. You can type any integer for subject and session number. 
+
 `
 Please type subject number: 0
+`
+
+`
 Please type session number: 0
 `
-Type 1 for the propmt asking for the distance from the screen:
+
+Type 1 for the prompt asking for the distance from the screen:
+
 `
 Is the Viewing Distance -- 60.0cm (Yes = 1, No = 0)  1
 `
+
 
 How much points you were able to earn? How easy/difficult it was earning points? 
 2.	What are your observations about the program? Was it easier to interact with? What can you improve with the code?
