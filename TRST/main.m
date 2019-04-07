@@ -12,7 +12,7 @@ global taskMap;
 global resReport;
 global totalTime;
 
-Screen('Preference', 'SkipSyncTests', 0);
+Screen('Preference', 'SkipSyncTests', 1);
 Screen('Preference', 'Verbosity', 0);
 
 %   Load parameters
