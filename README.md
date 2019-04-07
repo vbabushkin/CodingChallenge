@@ -1,10 +1,19 @@
 # Coding Challenge
-
+Please read [The Sreenivasan Lab Coding Manual](https://github.com/vbabushkin/CodingChallenge/blob/master/The%20Sreenivasan%20Lab%20Coding%20Manual.docx) before starting the coding challenge.
 # Task 1
-
 You are provided with a real, though quite simple, experiment code ( so called TRST for Triangle Rotated Stimulus Test ).  
+In TRST folder locate [main.m](https://github.com/vbabushkin/CodingChallenge/blob/master/TRST/main.m)and open it in Matlab, run it and go through all the trials. 
+As soon as you run the main.m you will see in Command Line window a following prompt, asking to submit subject and session number. You can type any integer for subject and session number. 
+`
+Please type subject number: 0
+Please type session number: 0
+`
+Type 1 for the propmt asking for the distance from the screen:
+`
+Is the Viewing Distance -- 60.0cm (Yes = 1, No = 0)  1
+`
 
-1.	Open [main.m](https://github.com/vbabushkin/CodingChallenge/blob/master/TRST/main.m), run it and go through all the trials. How much points you were able to earn? How easy/difficult it was earning points? 
+How much points you were able to earn? How easy/difficult it was earning points? 
 2.	What are your observations about the program? Was it easier to interact with? What can you improve with the code?
 3.	Introduce your improvements. For example, if you run the program on two screens you might find the central triangle difficult to rotate. Why is it so? What can you do to improve it?
 4.	The user results file and log file overwrites each time you run the main.m (for given date). Please modify the code to prevent overwriting of data files.
