@@ -67,6 +67,6 @@ This part requires you to make a version of the code in which they report color 
 
 ![alt text](https://github.com/vbabushkin/CodingChallenge/blob/master/img3.png)
 
-4.	Make sure the probe screen duration is limited, usually, the subject has to respond within 20 seconds. If no response has been received – the program marks the corresponding values in datafile as “NaN”  and moves to another trial.
+4.	Make sure the probe screen duration is limited, so the subject has to respond within 20 seconds. If no response has been received – the program marks the corresponding values in datafile as “NaN”  and moves to another trial.
 
 
