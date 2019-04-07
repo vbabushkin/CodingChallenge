@@ -61,7 +61,7 @@ This part requires you to create a version of the code in which subjects report 
 
 ![alt text](https://github.com/vbabushkin/CodingChallenge/blob/master/img5.png)
 
-2. Replace the orientation wheel with the colorwheel using the code in drawColorwheel.m
+2. Replace the orientation wheel with the colorwheel using the code in [drawColorwheel.m](https://github.com/vbabushkin/CodingChallenge/blob/master/TRST/drawColorwheel.m)
 
 3. Modify the code so that the color of the triangle changes with the position of the cursor on the colorwheel as it is rotated.
 
