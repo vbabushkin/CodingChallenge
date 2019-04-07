@@ -2,7 +2,7 @@
 # Part 1
 Please read [The Sreenivasan Lab Coding Manual](https://github.com/vbabushkin/CodingChallenge/blob/master/The%20Sreenivasan%20Lab%20Coding%20Manual.docx) before starting the coding challenge.
 # Part 2
-You are provided with real, but quite simple, experiment code ( called TRST for Triangle Rotated Stimulus Test ).  
+You are provided with basic experimental code (called TRST for Triangle Rotated Stimulus Test).  
 In the TRST folder, locate [main.m](https://github.com/vbabushkin/CodingChallenge/blob/master/TRST/main.m) and open it in Matlab, run it and go through all the trials. 
 As soon as you run main.m, you will see the following prompt in the Command Line window, asking you to submit a subject and session number. You can type any integer for the subject and session number. 
 
@@ -57,16 +57,18 @@ There are different ways to measure working memory capacity. One of these is clo
 ## Part 4
 This part requires you to create a version of the code in which subjects report color rather than orientation. So, every triangle needs to have a different color and the subject will be asked to report the color of one of the five triangles.
 
-1.	Make another version of task that cues the color. From the supportFiles folder, load the colorwheel360.mat and on each trial, pick 5 main colors for the 5 triangles (must be picked up from 12 equidistant colors in the matrix plus the jitter – within 5 rows up or down). You must get the following stimulus screen:
+1.	Make another version of task that cues the color. From the supportFiles folder, load the colorwheel360.mat and on each trial, pick 5 random colors for the 5 triangles. Make sure that none of the colors are repeated. You should get something similar to the following stimulus screen:
 
 ![alt text](https://github.com/vbabushkin/CodingChallenge/blob/master/img5.png)
 
 2. Replace the orientation wheel with the colorwheel using the code in drawColorwheel.m
 
-3. Modify the code so the color of the triangle changes with the position of the cursor on the colorwheel as it is rotated.
+3. Modify the code so that the color of the triangle changes with the position of the cursor on the colorwheel as it is rotated.
 
 ![alt text](https://github.com/vbabushkin/CodingChallenge/blob/master/img4.png)
 
-4.	Make sure the probe screen duration is limited, so the subject has to respond within 20 seconds. If no response has been received – the program marks the corresponding values in datafile as “NaN”  and moves to another trial.
+4.	Make sure the probe screen duration is limited, so the subject has to respond within 20 seconds. If no response has been received – the program should mark the corresponding values in the datafile as “NaN”  and move on to the next trial.
+
+
 
 
