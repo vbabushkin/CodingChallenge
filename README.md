@@ -42,35 +42,31 @@ This is a good practice preventing overwriting files. Add a feature, allowing th
 6.	Modify the code to allow the experimenter to exit the program any time ‘Q’ key is pressed. Make sure that adding this functionality updates the resReport so that no data is lost if the program is quit.
 7.	For some MEG and fMRI experiments we use a buttonbox to submit the responses  and a dial for rotations. Since you dont have a dial or a buttonbox, yu have to immitate this functionality with your computer keyboard. Create a new version of the code to allow subject to roate the cursor (‘t’ key – rotates clockwise, ‘b’ –key counterclockwise) and lock your responses pressing any key from 1 to 4 (immitates buttonbox functionality).
 
-## Task 2
+## Part 3
 There are different ways to measure the working memory capacity. The widely accepted one is closely related to the notion of “set size” – the number of items stored in the working memory.  Currently our code asks to remember only one stimulus.
-1.	Modify the code to remember 5 (n, in general) differently-oriented stimuli, placed in randomly selected 5 main orientations (say, we have selected following 5 out of 12 main orientations [30, 90, 150, 270, 340]. The triangles must be placed in these orientations plus some jitter between [-10,10]  degrees. Please ensure the triangles are not overlapping)
+1.	Modify the code to remember five stimuli. Create 12 different orientations and select 5 in random every time the experiment is run. For example below we have selected following 5 out of 12 main orientations [30, 90, 150, 270, 340]. The triangles must be placed in these orientations plus some jitter between [-10,10]  degrees. Please ensure the triangles are not overlapping.
 
 ![alt text](https://github.com/vbabushkin/CodingChallenge/blob/master/img1.png)
 
-2.	After some delay one of the triangles with fixed orientation appears in some random location. Modify the code to  allow the subject to match the triangle location. We expect something like this:
+2.	In Part 2 the response triangle was presented in the center of the screen. Now that we have five stimuli we need to pick one of them randomly for the participant to report on.  Modify the response screen to present this randomly picked stimulus at its corresponding location. In addition it should be presented in a random orientation. The subject has to adjust the orientation of the triangle. We expect something like this:
 
 ![alt text](https://github.com/vbabushkin/CodingChallenge/blob/master/img2.png)
 
-3.	The subject must receive a feedback and a score earned, like in the basic task.
-4.	Make another version of task that cues the color. In supportFiles folder load the colorwheel360.mat and pick up 5 main colors for the triangles (must be picked up from 12 equidistant colors in the matrix plus the jitter – within 5 rows up or down). You must get the following stimulus screen:
+3.	Make sure the feedback reflects these changes.
+
+## Part 4
+This part requires you to make a version of the code in which they report color rather than orientation. So, every triangle needs to have a different color and the subject will be asked to report the color of one of the five triangles.
+
+1.	Make another version of task that cues the color. In supportFiles folder load the colorwheel360.mat and pick up 5 main colors for the 5 triangles (must be picked up from 12 equidistant colors in the matrix plus the jitter – within 5 rows up or down). You must get the following stimulus screen:
 
 ![alt text](https://github.com/vbabushkin/CodingChallenge/blob/master/img5.png)
 
-5. After some delay one of the triangles appears at the center. Modify the code to allow the subject to match the triangle color:
+2. Replace the orientation wheel with the colorwheel using the code in drawColorwheel.m
+
+3. Modify the code so the color of the triangle changes with the position of the cursor on the colorwheel as it is rotated.
 
 ![alt text](https://github.com/vbabushkin/CodingChallenge/blob/master/img3.png)
 
-6.	Make sure the probe screen duration is limited, usually, the subject has to respond within 20 seconds. If no response has been received – the program marks the corresponding values in datafile as “NaN”  and moves to another trial.
-7.	Allow the subjects to submit their response a) by clicking the mouse and rotating with mouse. b) with keys 1,2,3 and 4 and rotate with ‘t’ and ‘b’ (mimics buttonbox and dial).
-8.	It is important to ensure the stimulus duration as exact as possible. For this reason it is advisable to count the exact number of frames from the stimulus presentation interval and update the screen exactly after the last frame appears. For more info please refer to Peter Scarfe’s PTB [“Accurate Timing Demo”](http://peterscarfe.com/accuratetimingdemo.html) and [“Wait Frames Demo”](http://peterscarfe.com/waitframesdemo.html) tutorials.
-
-## Software Engineering Questions
-
-1.	The original code is designed quite poorly. It relies heavily  on global variables, that are getting overwritten during the runtime. Please modify the code following the principle of information hiding whenever it is possible.
-2.	Modify the modules/functions (you are free to add new modules/classes/functions with reduced component size) whenever it would be possible.
-3.	The original code is quite complex and hard to read. What you can do to reduce the complexity and make the code readable even for novices.
-4.	Alter your code to ensure the weak coupling and strong cohesion.
-5.	Add necessary comments to make it understandable for non-programmers.
+4.	Make sure the probe screen duration is limited, usually, the subject has to respond within 20 seconds. If no response has been received – the program marks the corresponding values in datafile as “NaN”  and moves to another trial.
 
 
