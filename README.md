@@ -31,8 +31,11 @@ Error using initSubjectInfo (line 57)
 `
 ERROR! Result data file already exists! Choose a different subject/session number.
 `
+
 This is a good practice preventing overwriting files. Add a feature, allowing the experimenter to select whether the taskmap file should be overwritten or not. 
+
 3. The probe triangle orientation is selected randomly. However, in several cases it overlays the stimulus triangle and the subject has nothing to do but just to submit the response without rotating the triangle. Modify the code to ensure the difference btw stimulus and presented probe triangle orientations no less than 30 degrees. 
+
 4. Currently the task consists of 10 trials. However, if the number of trials increases we need to let the subject rest after some number of trials is completed. Please introduce a functionality into the program, that splits the number of trials into a specified number of blocks. There should be a break screen with the following text: 'End of Block (block number). Press Space to Continue'. This functionality should allow the participant to start the next block themselves by pressing the Space Key.
 
 9.	In terms of interactivity, is it correct to ask the subject to press a space bar to start or to finish the experiment while still using mouse for responding? Write two versions of code – for responding with mouse only and with space-bar only.
