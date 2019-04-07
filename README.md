@@ -65,7 +65,7 @@ This part requires you to make a version of the code in which they report color 
 
 3. Modify the code so the color of the triangle changes with the position of the cursor on the colorwheel as it is rotated.
 
-![alt text](https://github.com/vbabushkin/CodingChallenge/blob/master/img3.png)
+![alt text](https://github.com/vbabushkin/CodingChallenge/blob/master/img4.png)
 
 4.	Make sure the probe screen duration is limited, so the subject has to respond within 20 seconds. If no response has been received – the program marks the corresponding values in datafile as “NaN”  and moves to another trial.
 
